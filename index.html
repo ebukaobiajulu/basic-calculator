@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Javascript -->
+    <script defer src="app.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h2 class="head">Simple Calculator</h2>
+        <h3> <a href="https://github.com/ebukaobiajulu/basic-calculator" target="_blank">Link to the code</a></h3>
+        <!-- Calculator Buttons -->
+        <table class="calculator-buttons">  
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="display" readonly>
+                </td>                
+            </tr>         
+            <tr>
+                <td><button onclick="appendNumber(7)">7</button></td>
+                <td><button onclick="appendNumber(8)">8</button></td>
+                <td><button onclick="appendNumber(9)">9</button></td>
+                <td><button onclick="addOperator('/')">&divide;</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber(4)">4</button></td>
+                <td><button onclick="appendNumber(5)">5</button></td>
+                <td><button onclick="appendNumber(6)">6</button></td>
+                <td><button onclick="addOperator('x')">&times;</button></button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber(1)">1</button></td>
+                <td><button onclick="appendNumber(2)">2</button></td>
+                <td><button onclick="appendNumber(3)">3</button></td>
+                <td><button onclick="addOperator('-')">&minus;</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber(0)">0</button></td>
+                <td><button onclick="appendNumber('.')">.</button></td>
+                <td><button onclick="addOperator('+')">&plus;</button></td>
+                <td><button onclick="calculate()">&equals;</button></td>
+            </tr>
+        </table>
+    </div>  
+</body>
+</html>
